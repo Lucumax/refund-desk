@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title><link rel="stylesheet" href="/app.css"></head>
+<body class="wide" data-title="arena.title">
+<div class="banners" id="banners"></div>
+<header><span class="brand" data-s="app.name"></span>
+  <nav><a href="/" data-s="nav.home"></a><a href="/policy.html" data-s="nav.policy"></a><a href="/court.html" data-s="nav.court"></a></nav></header>
+<main>
+  <h1 data-s="arena.title"></h1>
+  <p class="lede" data-s="arena.intro"></p>
+  <p class="note" id="reader-line"></p>
+  <div class="cols arena">
+    <section aria-labelledby="h-compose">
+      <h2 id="h-compose" data-s="arena.compose_title"></h2>
+      <div class="card">
+        <label for="order" data-s="arena.order_label"></label>
+        <select id="order"></select>
+        <label for="text" data-s="arena.text_label"></label>
+        <textarea id="text" class="big" maxlength="1000"></textarea>
+        <p class="note" data-s="arena.text_hint"></p>
+        <div class="actions"><button type="button" id="send" data-s="arena.send"></button></div>
+        <p id="msg" role="alert"></p>
+      </div>
+      <h2 data-s="arena.library_title"></h2>
+      <p class="note" data-s="arena.library_hint"></p>
+      <div class="scroll" id="library"></div>
+    </section>
+    <section aria-labelledby="h-result" aria-live="polite">
+      <h2 id="h-result" data-s="arena.result_title"></h2>
+      <p class="note" id="result-empty" data-s="arena.result_empty"></p>
+      <div id="result" hidden></div>
+    </section>
+  </div>
+  <section aria-labelledby="h-tiles">
+    <h2 id="h-tiles" data-s="arena.score_title"></h2>
+    <div id="tiles"></div>
+    <details class="disclosure"><summary data-s="desk.score_title"></summary><div class="scorecards" id="score"></div></details>
+  </section>
+  <div class="trio">
+    <section aria-labelledby="h-budget">
+      <h2 id="h-budget" data-s="arena.budget_title"></h2>
+      <div class="card" id="budget"></div>
+    </section>
+    <section>
+      <h2 data-s="arena.policy_title"></h2>
+      <div class="card" id="policy"></div>
+    </section>
+    <section>
+      <h2 data-s="arena.recent_title"></h2>
+      <div class="card"><ul class="plain" id="recent"></ul></div>
+    </section>
+  </div>
+  <p class="note" data-s="arena.copy_hint"></p>
+</main>
+<script src="/common.js"></script><script src="/arena.js"></script>
+</body></html>

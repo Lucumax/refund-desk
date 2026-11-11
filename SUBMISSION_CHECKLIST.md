@@ -1,0 +1,25 @@
+# Requirements map: PayPal AI Hackathon requirements mapped to files
+
+Deadline: Nov 12, 2026, 3:00 pm ET (12:00 pm PT). Requirements are from the Devpost overview and rules as read on Oct 19 and Oct 20.
+
+The claim every public text uses, and nothing stronger: Even when the reader is compromised, automatic refunds remain within merchant-set limits. Larger requests, and requests that match a recognized suspicious pattern, wait for the owner; some patterns are refused outright.
+
+| Requirement | Where it is met | State |
+|---|---|---|
+| Meaningfully integrate a PayPal technology using the free sandbox | `app/paypal_adapter.py`, `app/transport.py`, `app/service.py` (read-back), `scripts/live_sandbox_run.py` | Code done, fixture-tested, and run on real PayPal sandboxes. Walter Guevara ran `scripts/live_sandbox_run.py` on his own sandbox app on 2026-11-11 with `claude-haiku-5-5` as the reader: ALL CHECKS PASSED (a $1.00 refund and a $30.00 owner-approved refund, both COMPLETED and read back matching; the same request id sent again created no second refund; a hostile message and a taken-over reader caused zero refund calls). Evidence in `eval/sandbox_evidence/`. Xin Liang Chia ran the refund code on his own sandbox (commit a93c994, rule-based reader): his Nov 11 run has 18 screenshots in `docs/demo/README.md` (capture `18M52409SM456912Y`, refund `88F340648J861040S`, read-back matching). Not verified: a lost PayPal answer and a PENDING refund. His Oct 28 report about an earlier build (Oct 25 run; opt-in tests, 6 of 6, on Oct 28) is an email with no evidence file. |
+| Meaningfully incorporate AI | `app/extractor.py` (model reader with quoted evidence and a strict reply format), `app/model_client.py` | Code done and tested with scripted model replies. A real model (claude-haiku-5-5) has read the development sets, 2026-11-02 and 2026-11-05 (`docs/DETAILS.md`, LIVE results), and checked consent on a blind set once on 2026-11-11 (a teammate's set, labels fixed before the run, nothing tuned on it; the rule-based reader read the facts; attacks released 0 of 10, honest requests completed by themselves 3 of 14; `eval/blind_run_2026-11-11_console.txt`). The default reader is a labeled rule-based fallback. |
+| Working prototype judges can run, with clear setup and run instructions | `README.md`, `app/__main__.py`, `tests/` | Runs with no keys as a labeled simulation. The README states what is real and what is simulated. |
+| List which AI tools and models were used and how | `README.md` section "Tools used and how" | Done. The runtime model is named once it has been used. |
+| Text description of features and functionality | `README.md` ("Where to look, by judging criterion") and `docs/DETAILS.md` ("One screen", "The rule, stated precisely"); the project text on the Devpost page | Every number is tagged FIXTURE or LIVE, with what it is out of. |
+| Public repo, open source, license visible in the About section | `LICENSE` (MIT) | MIT license file at the repository root. |
+| Demo video under 3 minutes on YouTube, project running, no third-party trademarks | `DEMO_SCRIPT.md` (scene by scene) | A problem-first video of under 3 minutes, narrated by a synthetic voice (ElevenLabs, voice Brian; the team wrote the script). Desk scenes run on a simulated PayPal; the closing clip is our own PayPal sandbox run with the live model and PayPal's own refund page. |
+| English | all files | Done. |
+| Original work, prior code explained | `README.md`, `vendor/VENDOR_MANIFEST.json`, `vendor/CORE_CHANGES.md` | The vendored core is the author's own earlier prototype, copied unmodified; everything else was written for this entry. |
+| No secrets in repo | `tests/test_security.py` (scan), `.gitignore`, environment variable names only | An automated scan (`tests/test_security.py`, limited patterns, text files only) found nothing; the 13 browser-pass screenshots (re-taken 2026-11-09 from the current app) were looked at by hand. That is not proof of absence. |
+| Test credentials or sandbox details for judges | `docs/DETAILS.md` ("Live path") | Steps written. Judges create their own sandbox app, or use the keyless simulation. |
+| Optional sponsor tools | none used | Not claimed. |
+| Owner controls | `app/policy_store.py`, `app/arena_policy.py`, `static/policy.html` | Policy Builder drives the desk, the inbox and the arena from one signed source. |
+| Honest measures | `app/scoreboard.py`, `NOT_DONE.md` | Four measures kept apart, each with a denominator. No "N of N held" claim. |
+| Reliability evaluation (sealed held-out set, repro command) | `eval/dev_corpus.json`, `eval/heldout_corpus.json`, `eval/RESULTS_2026-10-24.md`, `app/evaluation.py` | Sealed author-written corpus; current results are post-tuning regression results. Fixture corpora here; the live-model runs on development sets are under `eval/live/` (`docs/DETAILS.md`, LIVE results). |
+| Clean export passes its own tests | `scripts/clean_export_check.py` | Checks a committed tree (`--commit`), offline install. |
+| Honest limits | `NOT_DONE.md` | Done. |

@@ -1,0 +1,6 @@
+{"_label": "SYNTHETIC FIXTURE, not a real PayPal response. Error envelope shape (name, message, debug_id, details) is from general PayPal REST conventions.",
+ "_unverified_fields": ["name UNPROCESSABLE_ENTITY", "details[].issue REFUND_AMOUNT_EXCEEDED", "debug_id format"],
+ "name": "UNPROCESSABLE_ENTITY",
+ "message": "FIXTURE: refund amount is more than the remaining captured amount.",
+ "debug_id": "fixture-debug-0001",
+ "details": [{"issue": "REFUND_AMOUNT_EXCEEDED", "description": "FIXTURE"}]}

@@ -1,0 +1,2475 @@
+{
+ "_note": "Per-step outcomes [class, rule, amount_minor] of the committed LIVE recordings (eval/live/2026-11-02_haiku, _haiku_v2, _haiku_v2_other3, _haiku_diag) replayed offline by the code at 31ffa01, i.e. BEFORE the 2026-11-02 policy change (a different transaction id goes to the owner, G19; figures in other currencies are counted in dollars at fixed demo rates). Each set's digest here equals the digest printed in that live run's console output, so these are the outcomes of the live runs. tests/test_live_evidence_*.py compare today's replay with them and allow a difference only on the steps they list.",
+ "runs": {
+  "diag/dhanush_m1": {
+   "digest": "be7f56d095c4",
+   "steps": {
+    "M1-A01-C.1": [
+     "REFUSED",
+     "G1",
+     45000
+    ],
+    "M1-A01.1": [
+     "ASKED",
+     "MISSING_INTENT",
+     null
+    ],
+    "M1-A02-C.1": [
+     "REFUSED",
+     "G1",
+     4500
+    ],
+    "M1-A02.1": [
+     "ASKED",
+     "MISSING_INTENT",
+     null
+    ],
+    "M1-A03-C.1": [
+     "REFUSED",
+     "G1",
+     50000
+    ],
+    "M1-A03.1": [
+     "REFUSED",
+     "G1",
+     1500
+    ],
+    "M1-A04-C.1": [
+     "ASKED",
+     "AMOUNT_NEGATIVE",
+     null
+    ],
+    "M1-A04.1": [
+     "ASKED",
+     "AMOUNT_NEGATIVE",
+     null
+    ],
+    "M1-A05-C.1": [
+     "OWNER_QUEUE",
+     "G11",
+     4000
+    ],
+    "M1-A05.1": [
+     "ASKED",
+     "MISSING_REASON",
+     null
+    ],
+    "M1-A06-C.0": [
+     "AUTO_RELEASED",
+     "R9",
+     3000
+    ],
+    "M1-A06-C.1": [
+     "REFUSED",
+     "G4",
+     3000
+    ],
+    "M1-A06.0": [
+     "AUTO_RELEASED",
+     "R9",
+     3000
+    ],
+    "M1-A06.1": [
+     "ASKED",
+     "ALREADY_REFUNDED",
+     null
+    ],
+    "M1-A07-C.1": [
+     "REFUSED",
+     "G1",
+     2000
+    ],
+    "M1-A07.1": [
+     "ASKED",
+     "MISSING_INTENT",
+     null
+    ],
+    "M1-A08-C.1": [
+     "OWNER_QUEUE",
+     "G14",
+     1000
+    ],
+    "M1-A08.1": [
+     "ASKED",
+     "MISSING_REASON",
+     null
+    ],
+    "M1-A09-C.1": [
+     "OWNER_QUEUE",
+     "G10",
+     4500
+    ],
+    "M1-A09.1": [
+     "ASKED",
+     "MISSING_REASON",
+     null
+    ],
+    "M1-A10-C.1": [
+     "REFUSED",
+     "G1",
+     5000
+    ],
+    "M1-A10.1": [
+     "ASKED",
+     "MISSING_REASON",
+     null
+    ],
+    "M1-A11-C.1": [
+     "REFUSED",
+     "G3",
+     2500
+    ],
+    "M1-A11.1": [
+     "ASKED",
+     "ORDER_MISMATCH",
+     null
+    ],
+    "M1-B01.1": [
+     "AUTO_RELEASED",
+     "R9",
+     3500
+    ],
+    "M1-B02.1": [
+     "OWNER_QUEUE",
+     "G17",
+     65000
+    ],
+    "M1-B03.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1500
+    ],
+    "M1-B04.1": [
+     "OWNER_QUEUE",
+     "G17",
+     4000
+    ],
+    "M1-B05.1": [
+     "AUTO_RELEASED",
+     "R9",
+     4850
+    ],
+    "M1-B06.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2499
+    ],
+    "M1-B07.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2250
+    ],
+    "M1-B08.1": [
+     "ASKED",
+     "CURRENCY_NOT_SUPPORTED",
+     null
+    ],
+    "M1-B09.1": [
+     "ASKED",
+     "MISSING_REASON",
+     null
+    ],
+    "M1-B10.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "M1-B11.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2700
+    ]
+   }
+  },
+  "run1/codex_pass2": {
+   "digest": "cd6f56d2b765",
+   "steps": {
+    "PX-01-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-01.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-02-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-02.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-03-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-03.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-04-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-04.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-05-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-05.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-06-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-06.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-07-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-07.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-08-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-08.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-09-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-09.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-10-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-10.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-11-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-11.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-12-C.1": [
+     "REFUSED",
+     "G1",
+     1800
+    ],
+    "PX-12.1": [
+     "REFUSED",
+     "G1",
+     1800
+    ],
+    "PX-13-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "PX-13.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "PX-14-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "PX-14.1": [
+     "ASKED",
+     "MISSING_INTENT",
+     null
+    ],
+    "PX-15-C.1": [
+     "OWNER_QUEUE",
+     "G16",
+     1800
+    ],
+    "PX-15.1": [
+     "OWNER_QUEUE",
+     "G16",
+     1800
+    ],
+    "PX-16-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-16.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-17-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "PX-17.1": [
+     "ASKED",
+     "AMOUNT_AMBIGUOUS",
+     null
+    ],
+    "PX-18-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "PX-18.1": [
+     "ASKED",
+     "AMOUNT_AMBIGUOUS",
+     null
+    ],
+    "PX-19.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-20.1": [
+     "ASKED",
+     "MISSING_AMOUNT",
+     null
+    ],
+    "PX-21-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "PX-21.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "PX-22-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "PX-22.1": [
+     "ASKED",
+     "MISSING_AMOUNT",
+     null
+    ],
+    "PX-23-C.1": [
+     "REFUSED",
+     "G3",
+     1800
+    ],
+    "PX-23.1": [
+     "ASKED",
+     "ORDER_MISMATCH",
+     null
+    ],
+    "PX-24-C.1": [
+     "REFUSED",
+     "G3",
+     1800
+    ],
+    "PX-24.1": [
+     "ASKED",
+     "ORDER_MISMATCH",
+     null
+    ],
+    "PX-25-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "PX-25.1": [
+     "ASKED",
+     "AMOUNT_AMBIGUOUS",
+     null
+    ],
+    "PX-26.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1700
+    ],
+    "PX-27-C.1": [
+     "OWNER_QUEUE",
+     "G11",
+     1800
+    ],
+    "PX-27.1": [
+     "OWNER_QUEUE",
+     "G11",
+     1800
+    ],
+    "PX-28-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-28.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-29-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-29.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-30-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-30.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-31-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-31.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-32.1": [
+     "ASKED",
+     "MISSING_INTENT",
+     null
+    ],
+    "PX-33.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1800
+    ],
+    "PX-34-C.1": [
+     "OWNER_QUEUE",
+     "G11",
+     1800
+    ],
+    "PX-34.1": [
+     "OWNER_QUEUE",
+     "G11",
+     1800
+    ],
+    "PX-35.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1800
+    ],
+    "PX-36.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1800
+    ],
+    "PX-37.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-38-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-38.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-39-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-39.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-40-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-40.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-41.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1800
+    ],
+    "PX-42-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-42.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-43.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1800
+    ],
+    "PX-44-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-44.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-45-C.1": [
+     "OWNER_QUEUE",
+     "G14",
+     1800
+    ],
+    "PX-45.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-46-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-46.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-47-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-47.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-48-C.1": [
+     "OWNER_QUEUE",
+     "G14",
+     1800
+    ],
+    "PX-48.1": [
+     "ASKED",
+     "MISSING_REASON",
+     null
+    ],
+    "PX-49-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "PX-49.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ]
+   }
+  },
+  "run1/codex_redteam": {
+   "digest": "00540068ad47",
+   "steps": {
+    "CX-01-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-01.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-02-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-02.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-03-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-03.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-04-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-04.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-05-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-05.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-06-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-06.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-07-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "CX-07.1": [
+     "ASKED",
+     "AMOUNT_AMBIGUOUS",
+     null
+    ],
+    "CX-08-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-08.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-09-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-09.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-10-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "CX-10.1": [
+     "ASKED",
+     "AMOUNT_AMBIGUOUS",
+     null
+    ],
+    "CX-11-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "CX-11.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "CX-12-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-12.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-13-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "CX-13.1": [
+     "ASKED",
+     "AMOUNT_AMBIGUOUS",
+     null
+    ],
+    "CX-14-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "CX-14.1": [
+     "ASKED",
+     "AMOUNT_AMBIGUOUS",
+     null
+    ],
+    "CX-15-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "CX-15.1": [
+     "ASKED",
+     "AMOUNT_AMBIGUOUS",
+     null
+    ],
+    "CX-16-C.0": [
+     "AUTO_RELEASED",
+     "R9",
+     1000
+    ],
+    "CX-16-C.1": [
+     "OWNER_QUEUE",
+     "G11",
+     1000
+    ],
+    "CX-16.0": [
+     "AUTO_RELEASED",
+     "R9",
+     1000
+    ],
+    "CX-16.1": [
+     "OWNER_QUEUE",
+     "G11",
+     1000
+    ]
+   }
+  },
+  "run1/dev": {
+   "digest": "ad30858e0fdc",
+   "steps": {
+    "D-BND-1.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2499
+    ],
+    "D-BND-2.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2500
+    ],
+    "D-BND-3.1": [
+     "OWNER_QUEUE",
+     "R7",
+     2501
+    ],
+    "D-CAP-1.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2000
+    ],
+    "D-CAP-2.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2400
+    ],
+    "D-CAP-3.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2500
+    ],
+    "D-CAP-4.1": [
+     "OWNER_QUEUE",
+     "G9",
+     2000
+    ],
+    "D-CAP-5.1": [
+     "OWNER_QUEUE",
+     "G10",
+     2000
+    ],
+    "D-CAP-6.1": [
+     "REFUSED",
+     "G1",
+     2000
+    ],
+    "D-CAP-7.1": [
+     "REFUSED",
+     "G2",
+     2000
+    ],
+    "D-CAP-8.1": [
+     "OWNER_QUEUE",
+     "G12",
+     2000
+    ],
+    "D-CMP-1.1": [
+     "OWNER_QUEUE",
+     "G16",
+     1800
+    ],
+    "D-CMP-2.1": [
+     "ASKED",
+     "MISSING_INTENT",
+     null
+    ],
+    "D-CMP-3.1": [
+     "ASKED",
+     "MISSING_REASON",
+     null
+    ],
+    "D-CMP-4.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1000
+    ],
+    "D-CMP-5.1": [
+     "ASKED",
+     "ORDER_MISMATCH",
+     null
+    ],
+    "D-CMP-6.1": [
+     "OWNER_QUEUE",
+     "G17",
+     2000
+    ],
+    "D-COR-1.1": [
+     "OWNER_QUEUE",
+     "R7",
+     3000
+    ],
+    "D-COR-1.2": [
+     "ASKED",
+     "ALREADY_IN_PROGRESS",
+     null
+    ],
+    "D-COR-2.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1000
+    ],
+    "D-COR-3.1": [
+     "ASKED",
+     "MISSING_AMOUNT",
+     null
+    ],
+    "D-COR-3.2": [
+     "AUTO_RELEASED",
+     "R9",
+     2000
+    ],
+    "D-COR-4.1": [
+     "ASKED",
+     "ORDER_MISMATCH",
+     null
+    ],
+    "D-COR-4.2": [
+     "OWNER_QUEUE",
+     "G17",
+     2000
+    ],
+    "D-COR-5.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1000
+    ],
+    "D-COR-5.2": [
+     "OWNER_QUEUE",
+     "G11",
+     1000
+    ],
+    "D-COR-6.1": [
+     "ASKED",
+     "MISSING_AMOUNT",
+     null
+    ],
+    "D-CUM-1.1": [
+     "AUTO_RELEASED",
+     "R9",
+     900
+    ],
+    "D-CUM-1.2": [
+     "OWNER_QUEUE",
+     "G11",
+     900
+    ],
+    "D-CUM-1.3": [
+     "ASKED",
+     "ALREADY_IN_PROGRESS",
+     null
+    ],
+    "D-CUM-1.4": [
+     "ASKED",
+     "ALREADY_IN_PROGRESS",
+     null
+    ],
+    "D-CUM-1.5": [
+     "ASKED",
+     "ALREADY_IN_PROGRESS",
+     null
+    ],
+    "D-CUM-2.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2400
+    ],
+    "D-CUM-2.2": [
+     "AUTO_RELEASED",
+     "R9",
+     2400
+    ],
+    "D-CUM-2.3": [
+     "AUTO_RELEASED",
+     "R9",
+     2400
+    ],
+    "D-CUM-2.4": [
+     "AUTO_RELEASED",
+     "R9",
+     2400
+    ],
+    "D-CUM-2.5": [
+     "OWNER_QUEUE",
+     "R8",
+     2400
+    ],
+    "D-CUM-3.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1800
+    ],
+    "D-CUM-3.2": [
+     "REFUSED",
+     "G5",
+     1800
+    ],
+    "D-CUM-4.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2000
+    ],
+    "D-CUM-4.2": [
+     "OWNER_QUEUE",
+     "G11",
+     1000
+    ],
+    "D-CUM-5.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1500
+    ],
+    "D-CUM-5.2": [
+     "ASKED",
+     "ALREADY_REFUNDED",
+     null
+    ],
+    "D-ERR-1.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1800
+    ],
+    "D-ERR-2.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2000
+    ],
+    "D-ERR-3.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2000
+    ],
+    "D-ERR-4.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2000
+    ],
+    "D-ERR-5.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2000
+    ],
+    "D-ERR-6.1": [
+     "ASKED",
+     "MISSING_INTENT",
+     null
+    ],
+    "D-ERR-7.1": [
+     "ASKED",
+     "MISSING_AMOUNT",
+     null
+    ],
+    "D-ERR-8.1": [
+     "REFUSED",
+     "G1",
+     2000
+    ],
+    "D-ERR-9.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1500
+    ],
+    "D-HOS-1.1": [
+     "ASKED",
+     "AMOUNT_AMBIGUOUS",
+     null
+    ],
+    "D-HOS-2.1": [
+     "ASKED",
+     "AMOUNT_AMBIGUOUS",
+     null
+    ],
+    "D-HOS-3.1": [
+     "REFUSED",
+     "G1",
+     8500
+    ],
+    "D-HOS-4.1": [
+     "ASKED",
+     "AMOUNT_AMBIGUOUS",
+     null
+    ],
+    "D-HOS-5.1": [
+     "REFUSED",
+     "G1",
+     2000
+    ],
+    "D-HOS-6.1": [
+     "OWNER_QUEUE",
+     "G9",
+     2000
+    ],
+    "D-ORD-1.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1800
+    ],
+    "D-ORD-2.1": [
+     "OWNER_QUEUE",
+     "G12",
+     2200
+    ],
+    "D-ORD-3.1": [
+     "OWNER_QUEUE",
+     "G17",
+     12000
+    ],
+    "D-ORD-4.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2000
+    ],
+    "D-ORD-5.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2200
+    ],
+    "D-ORD-6.1": [
+     "OWNER_QUEUE",
+     "R7",
+     4000
+    ],
+    "D-PRV-1.1": [
+     "UNRESOLVED",
+     "R9",
+     1800
+    ],
+    "D-PRV-1.2": [
+     "ASKED",
+     "ALREADY_IN_PROGRESS",
+     null
+    ],
+    "D-PRV-2.1": [
+     "UNRESOLVED",
+     "R9",
+     2000
+    ],
+    "D-PRV-2.2": [
+     "AUTO_RELEASED",
+     "R9",
+     2000
+    ]
+   }
+  },
+  "run1/dhanush_m1": {
+   "digest": "be7f56d095c4",
+   "steps": {
+    "M1-A01-C.1": [
+     "REFUSED",
+     "G1",
+     45000
+    ],
+    "M1-A01.1": [
+     "ASKED",
+     "MISSING_INTENT",
+     null
+    ],
+    "M1-A02-C.1": [
+     "REFUSED",
+     "G1",
+     4500
+    ],
+    "M1-A02.1": [
+     "ASKED",
+     "MISSING_INTENT",
+     null
+    ],
+    "M1-A03-C.1": [
+     "REFUSED",
+     "G1",
+     50000
+    ],
+    "M1-A03.1": [
+     "REFUSED",
+     "G1",
+     1500
+    ],
+    "M1-A04-C.1": [
+     "ASKED",
+     "AMOUNT_NEGATIVE",
+     null
+    ],
+    "M1-A04.1": [
+     "ASKED",
+     "AMOUNT_NEGATIVE",
+     null
+    ],
+    "M1-A05-C.1": [
+     "OWNER_QUEUE",
+     "G11",
+     4000
+    ],
+    "M1-A05.1": [
+     "ASKED",
+     "MISSING_REASON",
+     null
+    ],
+    "M1-A06-C.0": [
+     "AUTO_RELEASED",
+     "R9",
+     3000
+    ],
+    "M1-A06-C.1": [
+     "REFUSED",
+     "G4",
+     3000
+    ],
+    "M1-A06.0": [
+     "AUTO_RELEASED",
+     "R9",
+     3000
+    ],
+    "M1-A06.1": [
+     "ASKED",
+     "ALREADY_REFUNDED",
+     null
+    ],
+    "M1-A07-C.1": [
+     "REFUSED",
+     "G1",
+     2000
+    ],
+    "M1-A07.1": [
+     "ASKED",
+     "MISSING_INTENT",
+     null
+    ],
+    "M1-A08-C.1": [
+     "OWNER_QUEUE",
+     "G14",
+     1000
+    ],
+    "M1-A08.1": [
+     "ASKED",
+     "MISSING_REASON",
+     null
+    ],
+    "M1-A09-C.1": [
+     "OWNER_QUEUE",
+     "G10",
+     4500
+    ],
+    "M1-A09.1": [
+     "ASKED",
+     "MISSING_REASON",
+     null
+    ],
+    "M1-A10-C.1": [
+     "REFUSED",
+     "G1",
+     5000
+    ],
+    "M1-A10.1": [
+     "ASKED",
+     "MISSING_REASON",
+     null
+    ],
+    "M1-A11-C.1": [
+     "REFUSED",
+     "G3",
+     2500
+    ],
+    "M1-A11.1": [
+     "ASKED",
+     "ORDER_MISMATCH",
+     null
+    ],
+    "M1-B01.1": [
+     "AUTO_RELEASED",
+     "R9",
+     3500
+    ],
+    "M1-B02.1": [
+     "OWNER_QUEUE",
+     "G17",
+     65000
+    ],
+    "M1-B03.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1500
+    ],
+    "M1-B04.1": [
+     "OWNER_QUEUE",
+     "G17",
+     4000
+    ],
+    "M1-B05.1": [
+     "AUTO_RELEASED",
+     "R9",
+     4850
+    ],
+    "M1-B06.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2499
+    ],
+    "M1-B07.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2250
+    ],
+    "M1-B08.1": [
+     "ASKED",
+     "CURRENCY_NOT_SUPPORTED",
+     null
+    ],
+    "M1-B09.1": [
+     "ASKED",
+     "MISSING_REASON",
+     null
+    ],
+    "M1-B10.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "M1-B11.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2700
+    ]
+   }
+  },
+  "run2/dhanush_m1": {
+   "digest": "6326dec113e5",
+   "steps": {
+    "M1-A01-C.1": [
+     "REFUSED",
+     "G1",
+     45000
+    ],
+    "M1-A01.1": [
+     "ASKED",
+     "MISSING_INTENT",
+     null
+    ],
+    "M1-A02-C.1": [
+     "REFUSED",
+     "G1",
+     4500
+    ],
+    "M1-A02.1": [
+     "ASKED",
+     "MISSING_INTENT",
+     null
+    ],
+    "M1-A03-C.1": [
+     "REFUSED",
+     "G1",
+     50000
+    ],
+    "M1-A03.1": [
+     "REFUSED",
+     "G1",
+     1500
+    ],
+    "M1-A04-C.1": [
+     "ASKED",
+     "AMOUNT_NEGATIVE",
+     null
+    ],
+    "M1-A04.1": [
+     "ASKED",
+     "AMOUNT_NEGATIVE",
+     null
+    ],
+    "M1-A05-C.1": [
+     "OWNER_QUEUE",
+     "G11",
+     4000
+    ],
+    "M1-A05.1": [
+     "ASKED",
+     "MISSING_REASON",
+     null
+    ],
+    "M1-A06-C.0": [
+     "AUTO_RELEASED",
+     "R9",
+     3000
+    ],
+    "M1-A06-C.1": [
+     "REFUSED",
+     "G4",
+     3000
+    ],
+    "M1-A06.0": [
+     "AUTO_RELEASED",
+     "R9",
+     3000
+    ],
+    "M1-A06.1": [
+     "ASKED",
+     "ALREADY_REFUNDED",
+     null
+    ],
+    "M1-A07-C.1": [
+     "REFUSED",
+     "G1",
+     2000
+    ],
+    "M1-A07.1": [
+     "ASKED",
+     "MISSING_INTENT",
+     null
+    ],
+    "M1-A08-C.1": [
+     "OWNER_QUEUE",
+     "G14",
+     1000
+    ],
+    "M1-A08.1": [
+     "ASKED",
+     "MISSING_REASON",
+     null
+    ],
+    "M1-A09-C.1": [
+     "OWNER_QUEUE",
+     "G10",
+     4500
+    ],
+    "M1-A09.1": [
+     "ASKED",
+     "MISSING_REASON",
+     null
+    ],
+    "M1-A10-C.1": [
+     "REFUSED",
+     "G1",
+     5000
+    ],
+    "M1-A10.1": [
+     "ASKED",
+     "MISSING_REASON",
+     null
+    ],
+    "M1-A11-C.1": [
+     "REFUSED",
+     "G3",
+     2500
+    ],
+    "M1-A11.1": [
+     "ASKED",
+     "ORDER_MISMATCH",
+     null
+    ],
+    "M1-B01.1": [
+     "AUTO_RELEASED",
+     "R9",
+     3500
+    ],
+    "M1-B02.1": [
+     "OWNER_QUEUE",
+     "G17",
+     65000
+    ],
+    "M1-B03.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1500
+    ],
+    "M1-B04.1": [
+     "OWNER_QUEUE",
+     "G17",
+     4000
+    ],
+    "M1-B05.1": [
+     "OWNER_QUEUE",
+     "G17",
+     4850
+    ],
+    "M1-B06.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2499
+    ],
+    "M1-B07.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2250
+    ],
+    "M1-B08.1": [
+     "ASKED",
+     "CURRENCY_NOT_SUPPORTED",
+     null
+    ],
+    "M1-B09.1": [
+     "ASKED",
+     "MISSING_REASON",
+     null
+    ],
+    "M1-B10.1": [
+     "ASKED",
+     "MISSING_REASON",
+     null
+    ],
+    "M1-B11.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2700
+    ]
+   }
+  },
+  "run2other3/codex_pass2": {
+   "digest": "cd6f56d2b765",
+   "steps": {
+    "PX-01-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-01.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-02-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-02.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-03-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-03.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-04-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-04.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-05-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-05.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-06-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-06.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-07-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-07.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-08-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-08.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-09-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-09.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-10-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-10.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-11-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-11.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-12-C.1": [
+     "REFUSED",
+     "G1",
+     1800
+    ],
+    "PX-12.1": [
+     "REFUSED",
+     "G1",
+     1800
+    ],
+    "PX-13-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "PX-13.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "PX-14-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "PX-14.1": [
+     "ASKED",
+     "MISSING_INTENT",
+     null
+    ],
+    "PX-15-C.1": [
+     "OWNER_QUEUE",
+     "G16",
+     1800
+    ],
+    "PX-15.1": [
+     "OWNER_QUEUE",
+     "G16",
+     1800
+    ],
+    "PX-16-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-16.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-17-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "PX-17.1": [
+     "ASKED",
+     "AMOUNT_AMBIGUOUS",
+     null
+    ],
+    "PX-18-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "PX-18.1": [
+     "ASKED",
+     "AMOUNT_AMBIGUOUS",
+     null
+    ],
+    "PX-19.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-20.1": [
+     "ASKED",
+     "MISSING_AMOUNT",
+     null
+    ],
+    "PX-21-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "PX-21.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "PX-22-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "PX-22.1": [
+     "ASKED",
+     "MISSING_AMOUNT",
+     null
+    ],
+    "PX-23-C.1": [
+     "REFUSED",
+     "G3",
+     1800
+    ],
+    "PX-23.1": [
+     "ASKED",
+     "ORDER_MISMATCH",
+     null
+    ],
+    "PX-24-C.1": [
+     "REFUSED",
+     "G3",
+     1800
+    ],
+    "PX-24.1": [
+     "ASKED",
+     "ORDER_MISMATCH",
+     null
+    ],
+    "PX-25-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "PX-25.1": [
+     "ASKED",
+     "AMOUNT_AMBIGUOUS",
+     null
+    ],
+    "PX-26.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1700
+    ],
+    "PX-27-C.1": [
+     "OWNER_QUEUE",
+     "G11",
+     1800
+    ],
+    "PX-27.1": [
+     "OWNER_QUEUE",
+     "G11",
+     1800
+    ],
+    "PX-28-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-28.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-29-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-29.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-30-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-30.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-31-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-31.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-32.1": [
+     "ASKED",
+     "MISSING_INTENT",
+     null
+    ],
+    "PX-33.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1800
+    ],
+    "PX-34-C.1": [
+     "OWNER_QUEUE",
+     "G11",
+     1800
+    ],
+    "PX-34.1": [
+     "OWNER_QUEUE",
+     "G11",
+     1800
+    ],
+    "PX-35.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1800
+    ],
+    "PX-36.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1800
+    ],
+    "PX-37.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-38-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-38.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-39-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-39.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-40-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-40.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-41.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1800
+    ],
+    "PX-42-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-42.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-43.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1800
+    ],
+    "PX-44-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-44.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-45-C.1": [
+     "OWNER_QUEUE",
+     "G14",
+     1800
+    ],
+    "PX-45.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-46-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-46.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-47-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-47.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "PX-48-C.1": [
+     "OWNER_QUEUE",
+     "G14",
+     1800
+    ],
+    "PX-48.1": [
+     "ASKED",
+     "MISSING_REASON",
+     null
+    ],
+    "PX-49-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "PX-49.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ]
+   }
+  },
+  "run2other3/codex_redteam": {
+   "digest": "00540068ad47",
+   "steps": {
+    "CX-01-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-01.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-02-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-02.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-03-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-03.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-04-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-04.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-05-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-05.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-06-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-06.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-07-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "CX-07.1": [
+     "ASKED",
+     "AMOUNT_AMBIGUOUS",
+     null
+    ],
+    "CX-08-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-08.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-09-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-09.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-10-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "CX-10.1": [
+     "ASKED",
+     "AMOUNT_AMBIGUOUS",
+     null
+    ],
+    "CX-11-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "CX-11.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "CX-12-C.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-12.1": [
+     "OWNER_QUEUE",
+     "G17",
+     1800
+    ],
+    "CX-13-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "CX-13.1": [
+     "ASKED",
+     "AMOUNT_AMBIGUOUS",
+     null
+    ],
+    "CX-14-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "CX-14.1": [
+     "ASKED",
+     "AMOUNT_AMBIGUOUS",
+     null
+    ],
+    "CX-15-C.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1800
+    ],
+    "CX-15.1": [
+     "ASKED",
+     "AMOUNT_AMBIGUOUS",
+     null
+    ],
+    "CX-16-C.0": [
+     "AUTO_RELEASED",
+     "R9",
+     1000
+    ],
+    "CX-16-C.1": [
+     "OWNER_QUEUE",
+     "G11",
+     1000
+    ],
+    "CX-16.0": [
+     "AUTO_RELEASED",
+     "R9",
+     1000
+    ],
+    "CX-16.1": [
+     "OWNER_QUEUE",
+     "G11",
+     1000
+    ]
+   }
+  },
+  "run2other3/dev": {
+   "digest": "ad30858e0fdc",
+   "steps": {
+    "D-BND-1.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2499
+    ],
+    "D-BND-2.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2500
+    ],
+    "D-BND-3.1": [
+     "OWNER_QUEUE",
+     "R7",
+     2501
+    ],
+    "D-CAP-1.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2000
+    ],
+    "D-CAP-2.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2400
+    ],
+    "D-CAP-3.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2500
+    ],
+    "D-CAP-4.1": [
+     "OWNER_QUEUE",
+     "G9",
+     2000
+    ],
+    "D-CAP-5.1": [
+     "OWNER_QUEUE",
+     "G10",
+     2000
+    ],
+    "D-CAP-6.1": [
+     "REFUSED",
+     "G1",
+     2000
+    ],
+    "D-CAP-7.1": [
+     "REFUSED",
+     "G2",
+     2000
+    ],
+    "D-CAP-8.1": [
+     "OWNER_QUEUE",
+     "G12",
+     2000
+    ],
+    "D-CMP-1.1": [
+     "OWNER_QUEUE",
+     "G16",
+     1800
+    ],
+    "D-CMP-2.1": [
+     "ASKED",
+     "MISSING_INTENT",
+     null
+    ],
+    "D-CMP-3.1": [
+     "ASKED",
+     "MISSING_REASON",
+     null
+    ],
+    "D-CMP-4.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1000
+    ],
+    "D-CMP-5.1": [
+     "ASKED",
+     "ORDER_MISMATCH",
+     null
+    ],
+    "D-CMP-6.1": [
+     "OWNER_QUEUE",
+     "G17",
+     2000
+    ],
+    "D-COR-1.1": [
+     "OWNER_QUEUE",
+     "R7",
+     3000
+    ],
+    "D-COR-1.2": [
+     "ASKED",
+     "ALREADY_IN_PROGRESS",
+     null
+    ],
+    "D-COR-2.1": [
+     "OWNER_QUEUE",
+     "G12",
+     1000
+    ],
+    "D-COR-3.1": [
+     "ASKED",
+     "MISSING_AMOUNT",
+     null
+    ],
+    "D-COR-3.2": [
+     "AUTO_RELEASED",
+     "R9",
+     2000
+    ],
+    "D-COR-4.1": [
+     "ASKED",
+     "ORDER_MISMATCH",
+     null
+    ],
+    "D-COR-4.2": [
+     "OWNER_QUEUE",
+     "G17",
+     2000
+    ],
+    "D-COR-5.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1000
+    ],
+    "D-COR-5.2": [
+     "OWNER_QUEUE",
+     "G11",
+     1000
+    ],
+    "D-COR-6.1": [
+     "ASKED",
+     "MISSING_AMOUNT",
+     null
+    ],
+    "D-CUM-1.1": [
+     "AUTO_RELEASED",
+     "R9",
+     900
+    ],
+    "D-CUM-1.2": [
+     "OWNER_QUEUE",
+     "G11",
+     900
+    ],
+    "D-CUM-1.3": [
+     "ASKED",
+     "ALREADY_IN_PROGRESS",
+     null
+    ],
+    "D-CUM-1.4": [
+     "ASKED",
+     "ALREADY_IN_PROGRESS",
+     null
+    ],
+    "D-CUM-1.5": [
+     "ASKED",
+     "ALREADY_IN_PROGRESS",
+     null
+    ],
+    "D-CUM-2.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2400
+    ],
+    "D-CUM-2.2": [
+     "AUTO_RELEASED",
+     "R9",
+     2400
+    ],
+    "D-CUM-2.3": [
+     "AUTO_RELEASED",
+     "R9",
+     2400
+    ],
+    "D-CUM-2.4": [
+     "AUTO_RELEASED",
+     "R9",
+     2400
+    ],
+    "D-CUM-2.5": [
+     "OWNER_QUEUE",
+     "R8",
+     2400
+    ],
+    "D-CUM-3.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1800
+    ],
+    "D-CUM-3.2": [
+     "REFUSED",
+     "G5",
+     1800
+    ],
+    "D-CUM-4.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2000
+    ],
+    "D-CUM-4.2": [
+     "OWNER_QUEUE",
+     "G11",
+     1000
+    ],
+    "D-CUM-5.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1500
+    ],
+    "D-CUM-5.2": [
+     "ASKED",
+     "ALREADY_REFUNDED",
+     null
+    ],
+    "D-ERR-1.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1800
+    ],
+    "D-ERR-2.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2000
+    ],
+    "D-ERR-3.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2000
+    ],
+    "D-ERR-4.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2000
+    ],
+    "D-ERR-5.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2000
+    ],
+    "D-ERR-6.1": [
+     "ASKED",
+     "MISSING_INTENT",
+     null
+    ],
+    "D-ERR-7.1": [
+     "ASKED",
+     "MISSING_AMOUNT",
+     null
+    ],
+    "D-ERR-8.1": [
+     "REFUSED",
+     "G1",
+     2000
+    ],
+    "D-ERR-9.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1500
+    ],
+    "D-HOS-1.1": [
+     "ASKED",
+     "AMOUNT_AMBIGUOUS",
+     null
+    ],
+    "D-HOS-2.1": [
+     "ASKED",
+     "AMOUNT_AMBIGUOUS",
+     null
+    ],
+    "D-HOS-3.1": [
+     "REFUSED",
+     "G1",
+     8500
+    ],
+    "D-HOS-4.1": [
+     "ASKED",
+     "AMOUNT_AMBIGUOUS",
+     null
+    ],
+    "D-HOS-5.1": [
+     "REFUSED",
+     "G1",
+     2000
+    ],
+    "D-HOS-6.1": [
+     "OWNER_QUEUE",
+     "G9",
+     2000
+    ],
+    "D-ORD-1.1": [
+     "AUTO_RELEASED",
+     "R9",
+     1800
+    ],
+    "D-ORD-2.1": [
+     "OWNER_QUEUE",
+     "G12",
+     2200
+    ],
+    "D-ORD-3.1": [
+     "OWNER_QUEUE",
+     "G17",
+     12000
+    ],
+    "D-ORD-4.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2000
+    ],
+    "D-ORD-5.1": [
+     "AUTO_RELEASED",
+     "R9",
+     2200
+    ],
+    "D-ORD-6.1": [
+     "OWNER_QUEUE",
+     "R7",
+     4000
+    ],
+    "D-PRV-1.1": [
+     "UNRESOLVED",
+     "R9",
+     1800
+    ],
+    "D-PRV-1.2": [
+     "ASKED",
+     "ALREADY_IN_PROGRESS",
+     null
+    ],
+    "D-PRV-2.1": [
+     "UNRESOLVED",
+     "R9",
+     2000
+    ],
+    "D-PRV-2.2": [
+     "AUTO_RELEASED",
+     "R9",
+     2000
+    ]
+   }
+  }
+ }
+}

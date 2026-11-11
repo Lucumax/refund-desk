@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title><link rel="stylesheet" href="/app.css"></head>
+<body class="wide" data-title="desk.title">
+<div class="banners" id="banners"></div>
+<header><span class="brand" data-s="app.name"></span>
+  <nav><a href="/arena.html" data-s="nav.arena"></a><a href="/policy.html" data-s="nav.policy"></a><a href="/inbox.html" data-s="nav.inbox"></a><a href="/court.html" data-s="nav.court"></a></nav></header>
+<main>
+  <section id="login" hidden>
+    <h1 data-s="login.title"></h1>
+    <form id="login-form">
+      <label for="passcode" data-s="login.label"></label>
+      <input id="passcode" name="passcode" type="password" autocomplete="current-password" required>
+      <p class="note" data-s="login.hint"></p>
+      <div class="actions"><button type="submit" data-s="login.button"></button></div>
+    </form>
+    <p id="login-msg" role="alert"></p>
+  </section>
+  <section id="app" hidden>
+    <h1 data-s="desk.title"></h1>
+    <p class="lede" data-s="desk.lede"></p>
+    <p class="note" id="rule-line"></p>
+    <div class="desk-grid">
+      <section class="area-flow" aria-labelledby="h-flow" aria-live="polite">
+        <h2 class="sr" id="h-flow" data-s="desk.step2"></h2>
+        <div id="flow-empty" class="stamp empty" data-tone="info">
+          <p class="stamp-word" data-s="desk.empty_hero"></p>
+          <p class="stamp-reason" data-s="desk.flow_empty"></p>
+        </div>
+        <div id="flow" hidden></div>
+      </section>
+      <section class="area-pick" aria-labelledby="h-send">
+        <h2 id="h-send" data-s="desk.step1"></h2>
+        <div class="card">
+          <h3 data-s="desk.group.legit"></h3>
+          <div id="sc-legit"></div>
+          <h3 data-s="desk.group.hostile"></h3>
+          <div id="sc-hostile"></div>
+          <h3 data-s="desk.group.compromised"></h3>
+          <p class="note" data-s="desk.group.compromised_note"></p>
+          <div id="sc-compromised"></div>
+          <h3 id="h-faults" data-s="desk.fault_title" hidden></h3>
+          <p class="note" id="n-faults" data-s="desk.fault_note" hidden></p>
+          <div id="sc-faults"></div>
+        </div>
+        <div class="card">
+          <h3 data-s="desk.free_title"></h3>
+          <label for="order" data-s="desk.order_label"></label>
+          <select id="order"></select>
+          <label for="text" data-s="desk.text_label"></label>
+          <textarea id="text" class="big" maxlength="2000"></textarea>
+          <div class="actions"><button type="button" id="send" data-s="desk.send"></button></div>
+          <p id="msg" role="alert"></p>
+        </div>
+      </section>
+      <section class="area-results" aria-labelledby="h-score">
+        <h2 id="h-score" data-s="desk.results_title"></h2>
+        <div id="tiles"></div>
+        <details class="disclosure">
+          <summary data-s="desk.score_title"></summary>
+          <div id="score" class="scorecards"></div>
+          <p class="note" data-s="desk.score_caveat"></p>
+        </details>
+        <h2 data-s="desk.recent_title"></h2>
+        <div class="card"><ul class="plain" id="recent"></ul></div>
+        <details class="disclosure">
+          <summary data-s="desk.about_title"></summary>
+          <p data-s="desk.intro"></p>
+          <p class="note" id="enforced-line"></p>
+          <p class="note" id="mode-line"></p>
+        </details>
+      </section>
+    </div>
+  </section>
+</main>
+<script src="/common.js"></script><script src="/desk.js"></script>
+</body></html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title><link rel="stylesheet" href="/app.css"></head>
+<body class="wide" data-title="arena.court.title">
+<div class="banners" id="banners"></div>
+<header><span class="brand" data-s="app.name"></span>
+  <nav><a href="/" data-s="nav.home"></a><a href="/arena.html" data-s="nav.arena"></a><a href="/policy.html" data-s="nav.policy"></a></nav></header>
+<main>
+  <h1 data-s="arena.court.title"></h1>
+  <p class="lede" data-s="arena.court.intro"></p>
+  <div class="cols court">
+    <section aria-labelledby="h-cases">
+      <h2 id="h-cases" data-s="arena.court.cases_title"></h2>
+      <p class="note" id="none" hidden data-s="arena.court.no_cases"></p>
+      <ul class="cases" id="cases"></ul>
+      <p><a class="button secondary" href="/arena.html" data-s="arena.court.back"></a></p>
+    </section>
+    <section aria-live="polite"><div id="transcript"></div></section>
+  </div>
+</main>
+<script src="/common.js"></script><script src="/court.js"></script>
+</body></html>

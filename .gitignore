@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+data/
+*.env
+.env*
+!.env.example
+my_orders.json
+sandbox/
+*.lock
+LEDGER.lock
+data.checkpoint/
+*.checkpoint/
+
+# private working notes, not for the public repository
+BUILD_REPORT.md
+LOCAL_SETUP_PRIVATE.md
+SPRINT1_REPORT.md
+live_evidence*.json
+
+# a teammate's holdout set stays outside the repository (hashes in eval/SEALED_MANIFEST.json)
+eval/dhanush_m1_holdout.jsonl
+.venv/

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title><link rel="stylesheet" href="/app.css"></head>
+<body data-title="approve.page_title">
+<div class="banners" id="banners"></div>
+<header><span class="brand" data-s="app.name"></span>
+  <nav><a href="/inbox.html" data-s="nav.inbox"></a><a href="/desk.html" data-s="home.desk_short"></a></nav></header>
+<main>
+  <section id="login" hidden>
+    <h1 data-s="login.title"></h1>
+    <form id="login-form">
+      <label for="passcode" data-s="login.label"></label>
+      <input id="passcode" name="passcode" type="password" autocomplete="current-password" required>
+      <div class="actions"><button type="submit" data-s="login.button"></button></div>
+    </form>
+    <p id="login-msg" role="alert"></p>
+  </section>
+  <section id="app" hidden aria-live="polite">
+    <div id="card"></div>
+  </section>
+</main>
+<script src="/common.js"></script><script src="/approve.js"></script>
+</body></html>

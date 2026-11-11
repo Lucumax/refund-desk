@@ -1,0 +1,16 @@
+{
+ "source": "GET /v2/payments/refunds/{id} on api-m.sandbox.paypal.com via app.paypal_adapter.PayPalClient, 2026-11-11",
+ "refund_id": "8KB17081E6778874D",
+ "status": "COMPLETED",
+ "amount": {
+  "currency_code": "USD",
+  "value": "30.00"
+ },
+ "capture_id": "2FY13415J9974010N",
+ "capture_status_after": "PARTIALLY_REFUNDED",
+ "capture_amount": {
+  "currency_code": "USD",
+  "value": "100.00"
+ },
+ "matches_recorded_desk_readback": true
+}

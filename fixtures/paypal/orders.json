@@ -1,0 +1,14 @@
+{"_label": "SYNTHETIC FIXTURE: invented sample orders for the demo. Not real customers, not real PayPal capture IDs.",
+ "orders": [
+  {"order_ref": "ORD-1001", "capture_id": "FIXCAP-1001", "total": "42.00", "currency": "USD", "item": "Sample ceramic mug set", "buyer_label": "Sample buyer A"},
+  {"order_ref": "ORD-1002", "capture_id": "FIXCAP-1002", "total": "120.00", "currency": "USD", "item": "Sample desk lamp", "buyer_label": "Sample buyer B"},
+  {"order_ref": "ORD-1003", "capture_id": "FIXCAP-1003", "total": "85.00", "currency": "USD", "item": "Sample canvas tote", "buyer_label": "Sample buyer C"},
+  {"order_ref": "ORD-1004", "capture_id": "FIXCAP-1004", "total": "15.00", "currency": "USD", "item": "Sample notebook", "buyer_label": "Sample buyer D"},
+  {"order_ref": "ORD-1005", "capture_id": "FIXCAP-1005", "total": "30.00", "currency": "USD", "item": "Sample tea sampler", "buyer_label": "Sample buyer E"},
+  {"order_ref": "ORD-1006", "capture_id": "FIXCAP-1006", "total": "36.00", "currency": "USD", "item": "Sample water bottle", "buyer_label": "Sample buyer F"},
+  {"order_ref": "ORD-1007", "capture_id": "FIXCAP-1007", "total": "64.00", "currency": "USD", "item": "Sample backpack", "buyer_label": "Sample buyer G"},
+  {"order_ref": "ORD-1008", "capture_id": "FIXCAP-1008", "total": "22.00", "currency": "USD", "item": "Sample phone stand", "buyer_label": "Sample buyer H"},
+  {"order_ref": "ORD-1009", "capture_id": "FIXCAP-1009", "total": "48.00", "currency": "USD", "item": "Sample ceramic planter", "buyer_label": "Sample buyer I"},
+  {"order_ref": "ORD-1010", "capture_id": "FIXCAP-1010", "total": "55.00", "currency": "USD", "item": "Sample reading light", "buyer_label": "Sample buyer J"},
+  {"order_ref": "ORD-1011", "capture_id": "FIXCAP-1011", "total": "40.00", "currency": "USD", "item": "Sample yoga mat", "buyer_label": "Sample buyer K"}
+ ]}

@@ -1,0 +1,16 @@
+{
+  "files": {
+    "approval_receipt/__init__.py": "85cbfb0643015ade654926c3e59cc48c35821ecdbf2adf7581770577169918eb",
+    "approval_receipt/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "approval_receipt/adapters.py": "cb5dfb8d902c63375cbcccaed73ceed720844bae027a0bc7b0e3a4aee9478aa1",
+    "approval_receipt/cli.py": "1e11c028124223ea3b8d0f73ab5ca1f32cf62f1244c720fcb2ffd12050d85a92",
+    "approval_receipt/engine.py": "448adf494b98e307d669f8026d06dc5e47517498ee2c432d694b3f37b993cb55",
+    "approval_receipt/errors.py": "b59243bc0f2896cac13028d932c2d6fd5243d1c8d1195ee865ec6633f83ff86b",
+    "approval_receipt/filelock.py": "34ca54cba92c805336d4c179a5be6ff686bbdfee014c7e0d7d1e4a96948465e2",
+    "approval_receipt/manifest.py": "c32781f7c2f706f0cafd474fc1ca80dcf5534b144e800a309a3e01b408510085",
+    "approval_receipt/models.py": "aa548a33c3522a085cbb476aaf4910dc9d2d8d0b8cce299d3168b3ba0f6d3482",
+    "approval_receipt/policy.py": "bf15740b3b821530c07107349cb70adb95f2e6dc71ace1454d3004968f6390de",
+    "approval_receipt/receipts.py": "4b68cc0dfc163301c0d8398e98deec0765d1f8b522bdb7d776ddd2dee6911f41"
+  },
+  "version": "2.0.0"
+}

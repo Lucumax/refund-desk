@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title><link rel="stylesheet" href="/app.css"></head>
+<body data-title="receipt.title">
+<div class="banners" id="banners"></div>
+<header><span class="brand" data-s="app.name"></span>
+  <nav><a href="/inbox.html" data-s="receipt.back"></a></nav></header>
+<main>
+  <section id="login" hidden>
+    <h1 data-s="login.title"></h1>
+    <form id="login-form">
+      <label for="passcode" data-s="login.label"></label>
+      <input id="passcode" name="passcode" type="password" autocomplete="current-password" required>
+      <div class="actions"><button type="submit" data-s="login.button"></button></div>
+    </form>
+    <p id="login-msg" role="alert"></p>
+  </section>
+  <section id="app" hidden>
+    <h1 data-s="receipt.title"></h1>
+    <h2 data-s="receipt.story_title"></h2>
+    <div class="card"><p id="paragraph"></p></div>
+    <div class="actions"><button type="button" id="verify" data-s="receipt.verify_button"></button></div>
+    <p class="note" data-s="receipt.verify_note"></p>
+    <div id="verify-result" class="result" hidden role="status" aria-live="polite"></div>
+    <h2 data-s="receipt.provider_title"></h2>
+    <div class="card"><p id="provider"></p></div>
+    <h2 data-s="receipt.history_title"></h2>
+    <ul class="plain" id="history"></ul>
+    <h2 data-s="receipt.raw_title"></h2>
+    <pre id="raw"></pre>
+  </section>
+</main>
+<script src="/common.js"></script><script src="/receipt.js"></script>
+</body></html>

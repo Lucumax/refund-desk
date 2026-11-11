@@ -1,0 +1,14 @@
+{
+ "version": 1,
+ "model": "claude-haiku-5-5",
+ "price_source": "platform.claude.com/docs/en/about-claude/pricing, 'Model pricing' table, read 2026-11-01: base input and output USD per million tokens (global endpoint, no cache, no batch discount; US-only inference would add 1.1x)",
+ "committed_usd": "0.0119050",
+ "inflight_usd": "0E-7",
+ "calls": 44,
+ "by_set": {
+  "dhanush_m1": {
+   "calls": 44,
+   "usd": "0.0119050"
+  }
+ }
+}

@@ -1,0 +1,32 @@
+DRY RUN (nothing is sent, no key is read). Model claude-haiku-5-5: $0.1 per million input tokens, $0.5 per million output tokens. Price source: platform.claude.com/docs/en/about-claude/pricing, 'Model pricing' table, read 2026-11-01: base input and output USD per million tokens (global endpoint, no cache, no batch discount; US-only inference would add 1.1x).
+  dhanush_m1: 33 cases, 35 steps, 57 model calls, worst case $0.12
+  codex_redteam: 32 cases, 34 steps, 34 model calls, worst case $0.07
+  codex_pass2: 88 cases, 88 steps, 88 model calls, worst case $0.18
+  dev: 51 cases, 68 steps, 84 model calls, worst case $0.18
+  total: 263 model calls, worst case $0.55   (cap $1.00; the ledger already holds $0.0000)
+  Worst case = every call uses all 4000 output tokens plus a deliberately high input estimate. Real replies are shorter, and the cap is checked against the usage each reply reports. The run starts a case only if that case's worst case still fits, so it stops cleanly and the result is labelled PARTIAL.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "<repo>\app\evaluation.py", line 721, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "<repo>\app\evaluation.py", line 716, in main
+    return repro(args.set, args.json, args.live_model, consent=args.consent, save_consent=args.save_consent,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>\app\evaluation.py", line 668, in repro
+    "entries": [{"text": x["text"], "reply": json.loads(x["raw_reply"])} for x in saved]}, f, indent=1)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>\app\evaluation.py", line 668, in <listcomp>
+    "entries": [{"text": x["text"], "reply": json.loads(x["raw_reply"])} for x in saved]}, f, indent=1)
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-install>\cpython-3.11-windows-x86_64-none\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-install>\cpython-3.11-windows-x86_64-none\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-install>\cpython-3.11-windows-x86_64-none\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+EXIT 1

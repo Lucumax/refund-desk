@@ -1,0 +1,5 @@
+order created: 5CL06812JJ4220847 (status CREATED), 100.00 USD
+1. Open this link in a browser and approve with the SANDBOX BUYER account:
+   https://www.sandbox.paypal.com/checkoutnow?token=5CL06812JJ4220847
+2. When you have approved, press Enter here to capture the payment... CAPTURE ID: 18M52409SM456912Y  (status COMPLETED, amount {"currency_code": "USD", "value": "100.00"})
+Next: python scripts/live_sandbox_run.py --capture-id 18M52409SM456912Y --amount 1.00 --yes

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title><link rel="stylesheet" href="/app.css"></head>
+<body data-title="buyer.title">
+<div class="banners" id="banners"></div>
+<header><span class="brand" data-s="app.name"></span><nav><a href="/" data-s="nav.home"></a></nav></header>
+<main>
+  <h1 data-s="buyer.title"></h1>
+  <form id="form">
+    <label for="text" data-s="buyer.label"></label>
+    <p class="note" id="hint" data-s="buyer.hint"></p>
+    <textarea id="text" name="text" maxlength="2000" aria-describedby="hint" required></textarea>
+    <div class="actions"><button type="submit" id="send" data-s="buyer.send"></button></div>
+  </form>
+  <p id="error" role="alert"></p>
+  <section id="status" hidden aria-live="polite">
+    <h2 data-s="buyer.status_title"></h2>
+    <div class="card"><p id="status-msg"></p></div>
+    <p class="note" data-s="buyer.track_hint"></p>
+    <div class="actions"><button type="button" id="refresh" class="secondary" data-s="buyer.refresh"></button></div>
+  </section>
+</main>
+<script src="/common.js"></script><script src="/buyer.js"></script>
+</body></html>

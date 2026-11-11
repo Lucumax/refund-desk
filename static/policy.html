@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title><link rel="stylesheet" href="/app.css"></head>
+<body class="wide" data-title="policy.title">
+<div class="banners" id="banners"></div>
+<header><span class="brand" data-s="app.name"></span>
+  <nav><a href="/" data-s="nav.home"></a><a href="/arena.html" data-s="nav.arena"></a><a href="/court.html" data-s="nav.court"></a></nav></header>
+<main>
+  <section id="login" hidden>
+    <h1 data-s="login.title"></h1>
+    <form id="login-form">
+      <label for="passcode" data-s="login.label"></label>
+      <input id="passcode" name="passcode" type="password" autocomplete="current-password" required>
+      <p class="note" data-s="login.hint"></p>
+      <div class="actions"><button type="submit" data-s="login.button"></button></div>
+    </form>
+    <p id="login-msg" role="alert"></p>
+  </section>
+  <section id="app" hidden>
+    <h1 data-s="policy.title"></h1>
+    <p class="lede" data-s="policy.intro"></p>
+    <div class="cols policy">
+      <section aria-labelledby="h-box">
+        <h2 id="h-box" data-s="policy.box_label"></h2>
+        <div class="card">
+          <label for="rule" class="note" data-s="policy.box_hint"></label>
+          <textarea id="rule" class="rule" maxlength="600"></textarea>
+          <div class="actions">
+            <button type="button" id="preview" data-s="policy.preview"></button>
+            <button type="button" id="save" class="secondary" data-s="policy.save" disabled></button>
+          </div>
+        </div>
+        <h2 data-s="policy.help_title"></h2>
+        <div class="card"><p class="note" data-s="policy.help_intro"></p><p class="note" data-s="policy.example_hint"></p><ul class="plain" id="examples"></ul></div>
+      </section>
+      <section aria-live="polite">
+        <div id="out"></div>
+      </section>
+      <section>
+        <h2 data-s="policy.current_title"></h2>
+        <div class="card"><p class="note" data-s="policy.current_note"></p><div id="current"></div></div>
+        <h2 data-s="policy.enforced_title"></h2>
+        <div class="card"><p class="note" data-s="policy.enforced_note"></p><div id="enforced"></div></div>
+        <h2 data-s="policy.versions_title"></h2>
+        <div class="card"><ul class="plain" id="versions"></ul></div>
+        <h2 data-s="policy.compare_title"></h2>
+        <div class="card">
+          <label for="vfrom" data-s="policy.compare_from"></label><select id="vfrom"></select>
+          <label for="vto" data-s="policy.compare_to"></label><select id="vto"></select>
+          <div class="actions"><button type="button" class="secondary" id="vgo" data-s="policy.compare_button"></button></div>
+          <div id="vdiff"></div>
+        </div>
+        <p><a class="button secondary" href="/arena.html" data-s="policy.try_arena"></a></p>
+      </section>
+    </div>
+  </section>
+</main>
+<script src="/common.js"></script><script src="/policy.js"></script>
+</body></html>

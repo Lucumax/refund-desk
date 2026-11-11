@@ -1,0 +1,9 @@
+{"_label": "SYNTHETIC FIXTURE, not a real PayPal response. Same shape as refund_completed.json with a PENDING status.",
+ "_unverified_fields": ["status PENDING", "status_details"],
+ "id": "{refund_id}",
+ "status": "PENDING",
+ "amount": {"currency_code": "USD", "value": "{value}"},
+ "custom_id": "{custom_id}",
+ "create_time": "2026-11-01T09:00:00Z",
+ "update_time": "2026-11-01T09:00:00Z",
+ "links": []}

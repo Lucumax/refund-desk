@@ -1,0 +1,27 @@
+{
+  "_note": "The sealed held-out corpus is not in every checkout (for example the team repository does not carry it). This file keeps its hashes so the seal can still be checked: README.md publishes the canonical hash, and where the file is present it must match. Tests that need the file skip cleanly when it is absent.",
+  "files": {
+    "eval/heldout_corpus.json": {
+      "canonical_sha256": "bfa2067e717bab4a3384ecad16a451d767f616170b5dbe625abc654818a00e91",
+      "file_sha256_lf": "e46dc29ae283c2824a4aa36a2a2eea1fd29a423dd2bd32081bf982ba03fde3f0",
+      "bytes_lf": 29878
+    },
+    "eval/dhanush_m1_holdout.jsonl": {
+      "_note": "Dhanush Kankanala's Milestone 1 holdout set (10 attacks, 10 ordinary, his own JSONL format, MIT). Kept OUTSIDE this repository on purpose, so it is never in the tuning path; it is not ported to the tollgate case format and no rule in this repository was written from it. Recorded here at handoff (2026-10-30) so any later copy can be checked. Not unseen: its author wrote it, scored the keyword baseline on it once, and relabeled one case (HA01) before handoff.",
+      "location": "outside the repository: data/holdout.jsonl in Dhanush Kankanala's Milestone 1 zip",
+      "canonical_sha256": "9590fb52184a0faa060c742d2e5257a9c01e7ba192b03e6129378bf3e842af1b",
+      "canonical_form": "the JSONL rows as one JSON list, sorted keys, no spaces, ASCII escapes (as app/evaluation.canonical_sha256)",
+      "file_sha256_lf": "12b8a7c5b6d404d0dde54b4ca73f914c631094fc76857bfc5a406ff11caa9157",
+      "bytes_lf": 12593,
+      "rows": 20
+    },
+    "eval/fresh_blind_corpus.json": {
+      "_note": "Dhanush Kankanala's fresh blind set (22 cases, 24 messages including 2 setup steps), received 2026-11-08 from branch dhanush-fresh-blind (commit 2edef1b). Hashes recorded at intake, before any run. Not used for any rule, prompt or tuning decision. One live run on 2026-11-11 (eval/blind_run_2026-11-11_console.txt); the file is now carried in the public export. Format and overlap with the other sets were checked by hash and id only.",
+      "canonical_sha256": "49e8be21f3ff6f3e36284d97727c5c0a87c33636b7f4b98a8460f2b2e2291080",
+      "file_sha256_lf": "20f45ab30fb61039af067ec06915deb6c089d1685f6908e911fc1e644bd5e866",
+      "bytes_lf": 17417,
+      "cases": 22,
+      "messages": 24
+    }
+  }
+}

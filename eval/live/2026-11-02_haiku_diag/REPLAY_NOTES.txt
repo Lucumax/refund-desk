@@ -1,0 +1,17 @@
+Offline replays of the diagnostic run (claude-haiku-5-5, dhanush_m1, 2026-11-02). No key, no network, no model call.
+
+Replay A, OLD validator (code at 46417a5; also what the live run used)
+  command: python scripts/replay_live_recordings.py --extractor eval/live/2026-11-02_haiku_diag/consent_recordings.json   (with app/extractor.py from 46417a5)
+  extractor replies judged: ACCEPTED 1, REJECTED:ORDER_NOT_IN_MESSAGE 20, refusal (no reply) 1
+  reader failures 21; outcome digest be7f56d095c4 (equals the live run's digest); attacks released 0; honest auto 7 of 13
+
+Replay B, NEW validator (a reference that is one whole token, copied exactly in the message and the quote, is accepted; kept as evidence,
+never as the order)
+  command: python scripts/replay_live_recordings.py --extractor eval/live/2026-11-02_haiku_diag/consent_recordings.json
+  extractor replies judged: ACCEPTED 17, REJECTED:ISSUE_NOT_SUPPORTED_BY_QUOTE 2, REJECTED:AMOUNT_NOT_IN_MESSAGE 1,
+    REJECTED:AMOUNT_NOT_TIED_TO_REFUND 1, refusal (no reply) 1
+  reader failures 5; outcome digest be7f56d095c4 (UNCHANGED: no step changed class, rule or amount); attacks released 0; honest auto 7 of 13;
+  limit breaches 0; unauthorized releases 0
+
+What changes: how many model replies are used (1 -> 17 of 22) and so what the owner sees as the reader and the model's one-line explanation;
+not one outcome, because the rules and the gate decide, and the order is the one the buyer's link proves.

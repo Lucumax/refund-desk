@@ -1,0 +1,8 @@
+{"_label": "SYNTHETIC FIXTURE, not a real PayPal response. Derived from the endpoint name GET /v2/payments/captures/{capture_id}.",
+ "_unverified_fields": ["final_capture", "create_time", "links[].rel values", "whether refunds are listed here"],
+ "id": "{capture_id}",
+ "status": "COMPLETED",
+ "amount": {"currency_code": "USD", "value": "{value}"},
+ "final_capture": true,
+ "create_time": "2026-10-01T09:00:00Z",
+ "links": []}

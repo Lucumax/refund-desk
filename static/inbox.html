@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title><link rel="stylesheet" href="/app.css"></head>
+<body data-title="inbox.title">
+<div class="banners" id="banners"></div>
+<header><span class="brand" data-s="app.name"></span>
+  <nav><a href="/" data-s="nav.home"></a><a href="/demo.html" data-s="nav.demo"></a></nav></header>
+<main>
+  <section id="login" hidden>
+    <h1 data-s="login.title"></h1>
+    <form id="login-form">
+      <label for="passcode" data-s="login.label"></label>
+      <input id="passcode" name="passcode" type="password" autocomplete="current-password" required>
+      <p class="note" data-s="login.hint"></p>
+      <div class="actions"><button type="submit" data-s="login.button"></button></div>
+    </form>
+    <p id="login-msg" role="alert"></p>
+  </section>
+  <section id="app" hidden>
+    <h1 data-s="inbox.title"></h1>
+    <p class="note" id="rule"></p>
+    <p id="summary" aria-live="polite"></p>
+    <p id="toast" role="status" aria-live="polite"></p>
+    <div id="list"></div>
+    <p id="empty" hidden data-s="inbox.empty"></p>
+  </section>
+</main>
+<script src="/common.js"></script><script src="/inbox.js"></script>
+</body></html>

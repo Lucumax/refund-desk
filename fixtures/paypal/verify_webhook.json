@@ -1,0 +1,3 @@
+{"_label": "SYNTHETIC FIXTURE. Endpoint name POST /v1/notifications/verify-webhook-signature is UNVERIFIED (the spec never confirmed it).",
+ "_unverified_fields": ["endpoint path", "request body keys", "verification_status values"],
+ "verification_status": "{verification_status}"}

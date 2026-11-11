@@ -1,0 +1,6 @@
+{"_label": "SYNTHETIC FIXTURE, not a real PayPal response.",
+ "_unverified_fields": ["name RESOURCE_NOT_FOUND", "details[].issue INVALID_RESOURCE_ID"],
+ "name": "RESOURCE_NOT_FOUND",
+ "message": "FIXTURE: the specified resource does not exist.",
+ "debug_id": "fixture-debug-0002",
+ "details": [{"issue": "INVALID_RESOURCE_ID", "description": "FIXTURE"}]}
